@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aashrith Rayapati — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">AR</div>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div>
+        <h1>Hey — I build interactive websites & apps.</h1>
+        <p class="lead">Student developer focused on responsive, accessible interfaces. This is a simple static portfolio you can edit.</p>
+        <div class="actions">
+          <a href="#projects" class="btn">See projects</a>
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+        </div>
+
+        <ul class="stats">
+          <li><strong>Experience</strong><span>Personal Projects</span></li>
+          <li><strong>Languages</strong><span>HTML, CSS, JS</span></li>
+          <li><strong>Role</strong><span>Frontend Developer</span></li>
+        </ul>
+      </div>
+
+      <aside class="hero-image" aria-hidden="true">
+        <!-- placeholder image -->
+      </aside>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Projects</h2>
+      <p class="muted">Selected projects — click to view or explore code.</p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Personal Portfolio Website</h3>
+          <p>Responsive portfolio built with HTML, CSS, and vanilla JS.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="card-actions"><a href="#">View</a><button onclick="demoAlert('Personal Portfolio Website')">Demo</button></div>
+        </article>
+
+        <article class="card">
+          <h3>Calculator App</h3>
+          <p>Interactive calculator with keyboard support and history.</p>
+          <div class="tags"><span>JS</span></div>
+          <div class="card-actions"><a href="#">View</a><button onclick="demoAlert('Calculator App')">Demo</button></div>
+        </article>
+
+        <article class="card">
+          <h3>Study Planner</h3>
+          <p>Planner for study sessions with localStorage persistence.</p>
+          <div class="tags"><span>JS</span><span>localStorage</span></div>
+          <div class="card-actions"><a href="#">View</a><button onclick="demoAlert('Study Planner')">Demo</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About me</h2>
+      <p>I&apos;m a student developer building projects to learn and share. I like clean UI, performant code, and small delightful interactions.</p>
+      <h3>Skills</h3>
+      <ul class="skills">
+        <li>HTML & CSS (Responsive)</li>
+        <li>JavaScript (Vanilla)</li>
+        <li>Git & GitHub</li>
+        <li>Accessibility basics</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p class="muted">This contact form is a demo (client-side only).</p>
+      <form id="contactForm">
+        <label>
+          Name
+          <input name="name" type="text" required />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </div>
+      </form>
+      <p id="formStatus" class="muted" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Aashrith Rayapati — Built with HTML, CSS & JS</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
